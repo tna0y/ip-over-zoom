@@ -24,7 +24,9 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
     ARCHIVE_OUTPUT_DIRECTORY    "${CMAKE_BINARY_DIR}/lib"
 )
 
+message(STATUS "DIR:  ${${PROJECT_NAME}_INCLUDE_DIR}")
+
 target_include_directories(${PROJECT_NAME}
     PUBLIC
-        ${${PROJECT_NAME}_INCLUDE_DIR}
+     ${CMAKE_CURRENT_LIST_DIR}
 )
