@@ -1,15 +1,13 @@
 #include "testlib.hpp"
 
+#include <zlib.h>
+
 #include <iostream>
 
 using namespace test;
 
 int32_t testlib::saySomething(const std::string &something) const noexcept {
-  if (something.empty()) {
-    std::cerr << "No value passed\n";
-    return 1;
-  }
-
   std::cout << something << '\n';
+  std::cout << zlibVersion() << '\n';
   return 0;
 }
