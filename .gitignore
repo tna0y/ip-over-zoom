@@ -18,5 +18,6 @@
 **/CTestTestfile.cmake
 **/_deps
 
+bin
 build
 lib

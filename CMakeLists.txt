@@ -6,4 +6,6 @@ set(project_root            "${CMAKE_CURRENT_LIST_DIR}")
 set(project_cmake           "${project_root}/cmake")
 set(project_version         ${PROJECT_VERSION})
 
+include(cmake/cppcheck.cmake)
+
 add_subdirectory(ip-over-zoom)

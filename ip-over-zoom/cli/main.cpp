@@ -4,7 +4,10 @@
 using namespace std;
 
 int main() {
-  test::testlib t{};
-  t.saySomething("yo!");
+
+  int a[10];
+  a[10] = 1;
+  test::testlib tdSSSS_SDDsdjonadoandadouadadad{};
+      tdSSSS_SDDsdjonadoandadouadadad.saySomething("yo!");
   return 0;
 }
