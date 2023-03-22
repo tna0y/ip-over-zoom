@@ -1,4 +1,4 @@
-set(component testlib)
+set(component tunnel)
 project(${project}-${component} LANGUAGES CXX)
 
 find_package(ZLIB REQUIRED)
@@ -31,8 +31,4 @@ message(STATUS "DIR:  ${${PROJECT_NAME}_INCLUDE_DIR}")
 target_include_directories(${PROJECT_NAME}
     PUBLIC
      ${CMAKE_CURRENT_LIST_DIR}
-)
-target_link_libraries(${PROJECT_NAME}
-    PRIVATE
-     ZLIB::ZLIB
 )

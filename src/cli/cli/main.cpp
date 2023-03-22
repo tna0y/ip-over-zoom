@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "testlib.hpp"
+#include "testlib/testlib.hpp"
 
 int main() {
   test::testlib kek{};

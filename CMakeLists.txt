@@ -9,5 +9,5 @@ set(project_version         ${PROJECT_VERSION})
 include(cmake/cppcheck.cmake)
 include(cmake/cpplint.cmake)
 
-add_subdirectory(ip-over-zoom/cli)
-add_subdirectory(ip-over-zoom/testlib)
+add_subdirectory(src/cli)
+add_subdirectory(src/testlib)
