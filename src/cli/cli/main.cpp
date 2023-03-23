@@ -1,9 +1,5 @@
 #include <iostream>
 
-#include "testlib/testlib.hpp"
+#include "tunnel/tunnel.hpp"
 
-int main() {
-  test::testlib kek{};
-  kek.saySomething("yo!");
-  return 0;
-}
+int main() { return 0; }

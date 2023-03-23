@@ -1,6 +1,5 @@
-set(component tunnel)
+set(component codec)
 project(${project}-${component} LANGUAGES CXX)
-
 
 set(${PROJECT_NAME}_INCLUDE_DIR "${CMAKE_CURRENT_LIST_DIR}")
 set(${PROJECT_NAME}_SOURCES_DIR "${CMAKE_CURRENT_LIST_DIR}")
@@ -28,10 +27,4 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 target_include_directories(${PROJECT_NAME}
     PUBLIC
      ${CMAKE_CURRENT_LIST_DIR}
-)
-
-
-target_link_libraries(${PROJECT_NAME}
-    PRIVATE
-        ${project}::common
 )
